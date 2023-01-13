@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background-color: transparent;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -15,7 +15,13 @@
   width: 60px;
 }
 
+.nav-item {
+  text-decoration-color: white;
+}
+
 .nav-link {
   font-size: larger;
   font-weight: bolder;
+  color: rgb(223, 217, 217);
+  transition: 0.8s;
 }
