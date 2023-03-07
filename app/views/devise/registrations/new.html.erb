@@ -1,4 +1,8 @@
-<h2>Sign up</h2>
+<div class="container pt-5 md-5">
+<div class="row justify-content-center">
+  <div class="col-6 col-sm-4">
+   <div class="form-login">
+      <h2>Sign up</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name),
 data: {turbo: false}) do |f| %>
@@ -19,8 +23,12 @@ data: {turbo: false}) do |f| %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Sign up", class: 'btn btn-flat' %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+     </div>
+    </div>
+  </div>
+</div>
