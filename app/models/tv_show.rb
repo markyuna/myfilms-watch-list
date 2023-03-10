@@ -1,4 +1,5 @@
 class TvShow < ApplicationRecord
+  belongs_to :user
   has_many :seasons
   has_one_attached :poster
 
