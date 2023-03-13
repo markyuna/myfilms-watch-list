@@ -1,0 +1,23 @@
+.body-text.-hero {
+  font-size: 1.30769231rem;
+  line-height: 1.52941176;
+}
+.section:first-child {
+  padding-top: 0;
+}
+.body-text {
+  word-break: break-word;
+}
+.section {
+  padding: 0 0 2.30769231rem;
+  position: relative;
+}
+
+.section-heading a{
+  text-decoration: none;
+
+}
+
+article, aside, footer, header, img, nav, section {
+  display: block;
+}

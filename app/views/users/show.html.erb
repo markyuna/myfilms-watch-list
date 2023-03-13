@@ -1,21 +1,56 @@
 
 <div class="container p-4">
   <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs border-light" id="nav-tab" role="tablist">
       <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
       <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
       <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-      <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+      <button class="nav-link" id="nav-Commentaire-tab" data-bs-toggle="tab" data-bs-target="#nav-Commentaire" type="button" role="tab" aria-controls="nav-Commentaire" aria-selected="false">Commentaires</button>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-      <h1><%= @user.name %></h1>
+      <h1 classe="mt-4" style="font-size: 29px">Bonjour, <%= @user.name %></h1>
       <p><%= @user.email %></p>
       <p><%= @user.created_at %></p>
+      <section id="favourites" class="section body-text -hero shown-for-owner" data-owner="markyuna">
+        <h2 class="section-heading">Films préférés</h2>
+        <hr>
+        <p class="body-text">Don’t forget to select your <a href="/settings/">films préférés</a>!</p>
+      </section>
+      <section id="recent-activity" class="section">
+				<h2 class="section-heading"><a href="/markyuna/activity/">Activité récente</a></h2>
+        <hr>
+				<ul class="poster-list -p150 -horizontal">
+          <li class="poster-container film-watched">
+            <div class="react-component poster film-poster film-poster-51788 linked-film-poster not-in-watchlist"
+            data-component-class="globals.comps.FilmPosterComponent"
+            data-film-id="51788"
+            data-film-name="Batman"
+            data-poster-url="/film/batman-1989/image-150/"
+            data-film-release-year="1989"
+            data-new-list-with-film-action="/list/new/with/batman-1989/"
+            data-remove-from-watchlist-action="/film/batman-1989/remove-from-watchlist/"
+            data-add-to-watchlist-action="/film/batman-1989/add-to-watchlist/"
+            data-rate-action="/film/batman-1989/rate/"
+            data-mark-as-watched-action="/film/batman-1989/mark-as-watched/"
+            data-mark-as-not-watched-action="/film/batman-1989/mark-as-not-watched/"
+            data-film-link="/film/batman-1989/"
+            data-film-in-watchlist="false"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/7/8/8/51788-batman-0-150-0-225-crop.jpg?v=368ed6db7a" width="150" height="225" alt="Batman" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/7/8/8/51788-batman-0-300-0-450-crop.jpg?v=368ed6db7a 2x" class="image"><a href="/markyuna/film/batman-1989/" class="frame has-menu" data-original-title="Batman (1989)"><span class="frame-title">Batman (1989)</span><span class="overlay"></span><span class="overlay-actions js-film-options -w150" style="display: none;"><span class="film-watch-link-target" data-film-id="51788"><span class="film-watch-link"><span class="has-icon icon-16 icon-watched ajax-click-action" data-action="/film/batman-1989/mark-as-not-watched/"><span class="replace icon"></span><span class="watched-text">You’ve seen this</span></span></span></span><span class="like-link-target" data-likeable-uid="film:51788"><span class="like-link"><span class="has-icon icon-16 ajax-click-action  icon-liked" data-action="/s/film:51788/like/" data-recaptcha-action="film_like"><span class="icon"></span>You liked this film</span></span></span><span class="replace menu-link icon"></span></span></a></div></div>
+            <p class="poster-viewingdata">
+              <span class="rating rated-8"> ★★★★ </span>
+                <span class="has-icon icon-rewatch rewatch-small icon-16"><span class="icon"></span></span>
+                <a href="/markyuna/film/batman-1989/" class="has-icon icon-review review-small icon-16 tooltip" data-original-title="Review"><span class="icon"></span></a>
+            </p>
+          </li>
+          <li class="poster-container -placeholder"></li>
+          <li class="poster-container -placeholder"></li>
+          <li class="poster-container -placeholder"></li>
+				</ul>
+			</section>
     </div>
-    <div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-Commentaire" role="tabpanel" aria-labelledby="nav-Commentaire-tab" tabindex="0">...</div>
   </div>
 </div>
