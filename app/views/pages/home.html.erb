@@ -4,25 +4,358 @@
     <h3 class="typed-js" data-controller="typed-js"></h3>
   </div>
 </div>
-<div class="container py-5">
-  <div class="d-flex align-items-center justify-content-between mb-3">
-    <div id="holder">
-        <div id="header">
-            <img alt="dbrweb banner" src="http://static.dbrweb.co.uk/img/title.png">
-        </div>
-        <div id="rightborder">
-            <div id="content">
-                <p>This is the domain-name of dbr/Ben.</p>
-                <p>There may seem to be very little here, but I use this domain for other things, so really there's a lot here, you just can't see it..</p>
+  <div id="content" class="site-body -backdrop">
+	<div class="content-wrap">
+		<div class="welcome-page overflow">
+			<section class="backdrop-header body-text">
+				<blockquote><p>
+					Take your first step into a&nbsp;larger&nbsp;world…
+				</p></blockquote>
+			</section>
+		</div>
+		<div class="welcome-content">
+			<h1 class="title-hero">How Letterboxd works</h1>
+		</div>
+		<section class="tour">
+			<div class="tour-item -left">
+				<figure class="-overlap">
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-markfilm.e963f386.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-markfilm-2x.fc848dff.jpg 2x" alt="Poster overlays">
+				</figure>
+				<div class="body-text -hero" id="mark-watched">
+					<h2 class="title-1 -mute">Tell us what you’ve seen</h2>
+					<p>
+						Get your Letterboxd underway by visiting our <a href="/films/popular/" target="_blank">Popular</a>
+						section and marking a few films you’ve seen. Click the <i class="ir s icon -inline -watch">‘eye’</i> on any film poster
+						to tell us you’ve watched it (add a <i class="ir s icon -inline -like">‘like’</i> if you liked it and/or a rating).
+						We add all watched titles to your <span class="link-if-member" data-href="/{username}/films/"><strong>Films</strong></span>
+						tab and then we can show you reviews containing spoilers (usually hidden) and other cool stuff. If you’re
+						<a href="/pro/" target="_blank">Pro</a> we compute detailed stats based on all your
+						watched films (see <a href="#stats">below</a>).
+				&nbsp;</p>
+				</div>
+			</div>
 
-                A few sites relating to me in some way:<br>
-                <ul>
-                    <li><a href="http://neverfear.org" title="neverfear">neverfear.org</a> - some of my writing</li>
-                    <li><a href="http://flickr.com/photos/-dbr/" title="Flickr/-dbr">Flickr/-dbr</a> - some of my photos</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-  </div>
+			<div class="tour-item -right" id="your-films">
+				<figure>
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-watchedfilms.0b647e27.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-watchedfilms-2x.f4c59710.jpg 2x" alt="Member’s films">
+				</figure>
+				<div class="body-text -hero">
+					<h2 class="title-1 -mute">Browse your watched films</h2>
+					<p>
+						Now that you’ve added some films, you can find them in the
+						<span class="link-if-member" data-href="/{username}/films/"><strong>Films</strong></span>
+						tab of your profile. As you add more content, your profile starts to reflect your taste. You can also browse the
+						films of other members, or the <a href="/films/by/rating/" target="_blank">community</a>, with
+						<strong>Hide watched films</strong> activated to find more great films to watch.
+				&nbsp;</p>
+					<p>
+						If you’ve previously saved film-related activity at IMDb or another service, we can help you
+						<a href="/about/importing-data/" target="_blank">import</a> this, too.
+				&nbsp;</p>
+				</div>
+			</div>
 
-</div>
+			<div class="tour-item -left" id="watchlist">
+				<figure class="-overlap">
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-watchlist.00af3a92.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-watchlist-2x.e6c99d00.jpg 2x" alt="Member’s films">
+				</figure>
+				<div class="body-text -hero">
+					<h2 class="title-1 -mute">Save films to watch later</h2>
+					<p>
+						One of our most-loved features, the <span class="link-if-member" data-href="/{username}/watchlist/" target="_blank"><strong>Watchlist</strong></span>,
+						lets you keep a list of films you want to see. Start in <a href="/films/upcoming/" target="_blank">Most Anticipated</a>
+						and mark a few films you want to see—use the <i class="ir s icon -inline -watchlist">‘clock’</i> on a film or review page,
+						or open the options menu on any poster (shown opposite). If you subsequently log or mark a film as watched,
+						we’ll move it from your Watchlist to your <span class="link-if-member" data-href="/{username}/films/" target="_blank"><strong>Films</strong></span>
+						(and add it to your <span class="link-if-member" data-href="/{username}/films/diary/" target="_blank"><strong>Diary</strong></span>,
+						if you provide a date—more on that&nbsp;<a href="#logging-films">below</a>).
+				&nbsp;</p>
+				</div>
+			</div>
+
+			<div class="tour-item -right" id="account-menu">
+				<figure class="-overlap">
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-usermenu.ec0ab5bd.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-usermenu-2x.6d9759e5.jpg 2x" alt="Member’s menu">
+				</figure>
+				<div class="body-text -hero">
+					<h2 class="title-1 -mute">Your account, profile and&nbsp;settings</h2>
+					<p>
+						Click your username (at the top of each page) for shortcuts to the main sections of your account. Your
+						<span class="link-if-member" data-href="/{username}/"><strong>Profile</strong></span>,
+						<span class="link-if-member" data-href="/{username}/films/"><strong>Films</strong></span>,
+						<span class="link-if-member" data-href="/{username}/films/diary/"><strong>Diary</strong></span>,
+						<span class="link-if-member" data-href="/{username}/watchlist/"><strong>Watchlist</strong></span>
+						and other pages are here.
+				&nbsp;</p>
+					<p>
+						You can customize your name, location, website, bio and favorite films in
+						<span class="link-if-member" data-href="/settings/"><strong>Settings</strong></span>. We use your
+						<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> avatar if you connect your account, or a
+						<a href="https://www.gravatar.com" target="_blank" rel="noopener noreferrer">Gravatar</a> matching the email on&nbsp;your profile.
+				&nbsp;</p>
+					<p>
+						Note: your profile (and any other content you publish, with the exception of private lists) is visible
+						to others, and to search engines.
+				&nbsp;</p>
+				</div>
+			</div>
+
+			<div class="tour-item -left" id="logging-films">
+				<figure class="-overlap">
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-logfilm.e64cf2ab.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-logfilm-2x.a3ee0c9f.jpg 2x" alt="Diary Entry screen">
+				</figure>
+				<div class="body-text -hero">
+					<h2 class="title-1 -mute">Log a film</h2>
+					<p>
+						Log a film to tell us you watched it on a particular date, and to attach a review, rating and tags.
+						We put all films you log with a date into your <span class="link-if-member" data-href="/{username}/films/diary/"><strong>Diary</strong></span>,
+						a great reference for when it comes time to compile your year-end list.
+				&nbsp;</p>
+					<p>
+						You can rate films without logging them too, either on a film or review page, or from the ‘more options’ menu on a poster.
+				&nbsp;</p>
+
+
+
+
+		<a class="button -action js-button-add -divider has-icon signin-text-link" href="#"><span class="icon"></span>Sign in to add films</a>
+
+
+				</div>
+			</div>
+
+			<div class="tour-item -right" id="activity">
+				<figure>
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-activity.062113c4.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-activity-2x.e1bd18b2.jpg 2x" alt="Activity stream">
+				</figure>
+				<div class="body-text -hero">
+					<h2 class="title-1 -mute">Following and activity</h2>
+					<p>
+						The best way to find members to follow is by reading reviews of films you like, to identify the voices and opinions you dig.
+						Our <a href="/members/" target="_blank">Members</a> page lists popular accounts.
+				&nbsp;</p>
+					<p>
+						As you follow more people, we create a personalized <span class="link-if-member" data-href="/activity/"><strong>Activity</strong></span> stream full of
+						reviews and recommendations from these members (and you’re bound to find new people to follow from the Likes included here). Use the
+						<span class="link-if-member" data-href="/activity/incoming/"><strong>Incoming</strong></span> tab to see who’s interacting with you, and upgrade to
+						<a href="/pro/" target="_blank">Pro</a> to personalize the types of activity you see on each device.
+				&nbsp;</p>
+				</div>
+			</div>
+
+			<div class="tour-item -left" id="lists">
+				<figure>
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-list.53cfadb9.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-list-2x.3e7cede3.jpg 2x" alt="List">
+				</figure>
+				<div class="body-text -hero">
+					<h2 class="title-1 -mute">Make and share lists</h2>
+					<p>
+						Lists are a great way to share a collection of related films, or to rank the films of your favorite genre, star, director or franchise.
+						It’s&nbsp;fun to welcome suggestions for your lists from other members.
+				&nbsp;</p>
+					<p>
+						Start a list on your <span class="link-if-member" data-href="/{username}/lists/"><strong>Lists</strong></span> tab,
+						then add films on the ‘Edit’ screen (or from the ‘more options’ menu on a poster).
+						The first time you make a list public, it’s shared with your&nbsp;followers.
+				&nbsp;</p>
+
+
+
+		<a class="button -action js-button-add -divider has-icon signin-text-link" href="#"><span class="icon"></span>Sign in to make lists</a>
+
+
+				</div>
+			</div>
+
+			<div class="tour-item -right" id="stats">
+				<figure class="-overlap">
+					<img src="https://s.ltrbxd.com/static/img/welcome/welcome-stats.22709dd5.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/welcome-stats-2x.acf31cc8.jpg 2x" alt="Stats">
+				</figure>
+				<div class="body-text -hero">
+					<h2 class="title-1 -mute">Upgrade for stats + more!</h2>
+					<p>
+						The more films you log on Letterboxd, the more ways we have to analyze your movie-watching habits.
+						Upgrade to a <a href="/pro/">Pro or Patron</a> account and we’ll generate all-time
+						stats based on every film you’ve added to your profile, and annual stats for each year with at least
+						ten films logged.
+				&nbsp;</p>
+					<p>
+						Stats include overview by week/year, highest rated decades, most watched and highest rated actors and
+						directors, progress against milestone lists, genre, language and country breakdowns, and lots more.
+				&nbsp;</p>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<section class="strip">
+		<div class="content-wrap">
+			<h2 class="title-hero">Here’s what you’ll find in our main sections…</h2>
+			<ul class="columns-4">
+				<li class="body-text">
+					<h3 class="title-2 -mute"><a href="/">Homepage</a></h3>
+					<p>If you’re signed in, you’ll see a selection of popular films, reviews and lists from Letterboxd members. As you follow more people, we personalize this page to show what’s popular in&nbsp;your network.</p>
+				</li>
+
+				<li class="body-text">
+					<h3 class="title-2 -mute"><a href="/films/">Films</a></h3>
+					<p>This section shows which films our members are watching and reviewing the most. It’s also your starting point for browsing the whole database, by decade/year, genre, popularity, rating, streaming service and more.</p>
+				</li>
+
+				<li class="body-text">
+					<h3 class="title-2 -mute"><a href="/lists/">Lists</a></h3>
+					<p>This section shows our most popular lists, and a selection of recently added content. From here you can create a list of your own, browse more popular lists, or browse by the tags applied to each by its creator.</p>
+				</li>
+
+				<li class="body-text">
+					<h3 class="title-2 -mute"><a href="/members/">Members</a></h3>
+					<p>Here you’ll find others whose content is being enjoyed most by our community. Click through to see if you like their style, or locate your real-life Twitter and Facebook friends that also use Letterboxd.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<div class="content-wrap -section-gap">
+
+		<h1 class="title-hero">More tips and tricks</h1>
+		<ul class="columns-4 content-grid">
+			<li class="body-text">
+				<figure class="-frame">
+					<img src="https://s.ltrbxd.com/static/img/welcome/tip-panel.9960c464.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/tip-panel-2x.592af806.jpg 2x" alt="Film actions">
+				</figure>
+				<h3 class="title-2 -mute">Film actions</h3>
+				<p>On a film or review page, use these controls to tell us you’ve seen (and liked) the film, and how you rated it. Add it to your <span class="link-if-member" data-href="/{username}/watchlist/"><strong>Watchlist</strong></span> if you plan to see it later. You can also log the film or add it to a list from here.</p>
+			</li>
+
+			<li class="body-text">
+				<figure class="-frame">
+					<img src="https://s.ltrbxd.com/static/img/welcome/tip-tags.dadc4db9.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/tip-tags-2x.9e3be352.jpg 2x" alt="Tags">
+				</figure>
+				<h3 class="title-2 -mute">Tagging films</h3>
+				<p>Adding tags as you log films lets you easily recall them based on any criteria. Tags can be used to encode how, where or with whom you saw a film, or to categorize films by your own genre or content taxonomy.</p>
+			</li>
+
+			<li class="body-text">
+				<figure class="-frame">
+					<img src="https://s.ltrbxd.com/static/img/welcome/tip-renumbering.8ea9406a.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/tip-renumbering-2x.d52306bf.jpg 2x" alt="Numbered list">
+				</figure>
+				<h3 class="title-2 -mute">Reordering lists</h3>
+				<p>To quickly move a film to another position when editing, show List Numbers, then click the number of the entry to move. Type a new position and hit Return. The film will instantly move to that&nbsp;position.</p>
+			</li>
+
+			<li class="body-text">
+				<figure class="-frame">
+					<img src="https://s.ltrbxd.com/static/img/welcome/tip-pro.7534be1a.jpg" srcset="https://s.ltrbxd.com/static/img/welcome/tip-pro-2x.7f413ec0.jpg 2x" alt="Upgrade to Pro">
+				</figure>
+				<h3 class="title-2 -mute">Upgrade to Pro!</h3>
+				<p><a href="/pro/">Pro accounts</a> unlock additional capabilities: an all-time Stats page and annual Year in Review pages for each year of activity. Filter your activity view, filter film lists by service availability, clone lists and more!</p>
+			</li>
+		</ul>
+
+		<div class="welcome-footer body-text -hero -section-gap">
+
+			<h2 class="title-hero shown-when-logged-out"><a href="#" class="signin-text-link">Sign in</a> or <a href="/create-account/" class="create-account-link cboxElement">create an account</a> to get started!</h2>
+			<p class="body-text -centered">Then grab our <a href="/apps/" target="_blank">apps</a>, find your <a href="/user/find-friends/twitter/" target="_blank">friends on other networks</a>, and see our <a href="/about/" target="_blank">questions</a> page for more&nbsp;answers.</p>
+		</div>
+
+		<section class="split-columns -section-gap">
+			<div class="split-column -column-4 -column-left">
+				<h2 class="title-hero">Import your films</h2>
+				<h3 class="title-2 -mute -long -centered">Free to all members. Create your own CSV file, or import from another service. We support these IMDb exports:</h3>
+				<ul class="icon-list -gap-4">
+					<li><i class="ir s big-icon -rate"></i> Ratings</li>
+					<li><i class="ir s big-icon -watch"></i> Check-ins</li>
+					<li><i class="ir s big-icon -list"></i> Lists</li>
+					<li><i class="ir s big-icon -watchlist"></i> Watchlists</li>
+				</ul>
+				<div class="-centered-content">
+					<a class="micro-button -large -gap-1" href="/about/migrating-from-imdb/" target="_blank">Read our IMDb migration&nbsp;guide</a>
+					<p class="body-text -small">or see our <a href="/about/importing-data/" target="_blank">import format documentation</a></p>
+				</div>
+			</div>
+			<div class="split-column -column-7 -column-right">
+
+
+					<h2 class="title-hero">Discover more films</h2>
+					<h3 class="title-2 -mute -long -centered">Here’s a selection of our highest rated narrative feature films. The <a href="/dave/list/official-top-250-narrative-feature-films/" target="_blank">complete list of 250</a> is maintained by the tireless Dave Vis. How many have you seen?</h3>
+					<ul class="poster-list -p70 -grid -scaled64 -scaled64-2rows -gap-3">
+
+
+						<li class="react-component poster film-poster film-poster-36192 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="36192" data-film-name="Come and See" data-poster-url="/film/come-and-see/image-150/" data-film-release-year="1985" data-new-list-with-film-action="/list/new/with/come-and-see/" data-remove-from-watchlist-action="/film/come-and-see/remove-from-watchlist/" data-add-to-watchlist-action="/film/come-and-see/add-to-watchlist/" data-rate-action="/film/come-and-see/rate/" data-mark-as-watched-action="/film/come-and-see/mark-as-watched/" data-mark-as-not-watched-action="/film/come-and-see/mark-as-not-watched/" data-film-link="/film/come-and-see/"><div><img src="https://a.ltrbxd.com/resized/film-poster/3/6/1/9/2/36192-come-and-see-0-70-0-105-crop.jpg?v=741b0269bb" width="70" height="105" alt="Come and See" srcset="https://a.ltrbxd.com/resized/film-poster/3/6/1/9/2/36192-come-and-see-0-140-0-210-crop.jpg?v=741b0269bb 2x" class="image"><a href="/film/come-and-see/" class="frame" data-original-title="Come and See (1985)"><span class="frame-title">Come and See (1985)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-426406 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="426406" data-film-name="Parasite" data-poster-url="/film/parasite-2019/image-150/" data-film-release-year="2019" data-new-list-with-film-action="/list/new/with/parasite-2019/" data-remove-from-watchlist-action="/film/parasite-2019/remove-from-watchlist/" data-add-to-watchlist-action="/film/parasite-2019/add-to-watchlist/" data-rate-action="/film/parasite-2019/rate/" data-mark-as-watched-action="/film/parasite-2019/mark-as-watched/" data-mark-as-not-watched-action="/film/parasite-2019/mark-as-not-watched/" data-film-link="/film/parasite-2019/"><div><img src="https://a.ltrbxd.com/resized/film-poster/4/2/6/4/0/6/426406-parasite-0-70-0-105-crop.jpg?v=8f5653f710" width="70" height="105" alt="Parasite" srcset="https://a.ltrbxd.com/resized/film-poster/4/2/6/4/0/6/426406-parasite-0-140-0-210-crop.jpg?v=8f5653f710 2x" class="image"><a href="/film/parasite-2019/" class="frame" data-original-title="Parasite (2019)"><span class="frame-title">Parasite (2019)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-24788 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="24788" data-film-name="A Dog's Will" data-poster-url="/film/a-dogs-will/image-150/" data-film-release-year="2000" data-new-list-with-film-action="/list/new/with/a-dogs-will/" data-remove-from-watchlist-action="/film/a-dogs-will/remove-from-watchlist/" data-add-to-watchlist-action="/film/a-dogs-will/add-to-watchlist/" data-rate-action="/film/a-dogs-will/rate/" data-mark-as-watched-action="/film/a-dogs-will/mark-as-watched/" data-mark-as-not-watched-action="/film/a-dogs-will/mark-as-not-watched/" data-film-link="/film/a-dogs-will/"><div><img src="https://a.ltrbxd.com/resized/film-poster/2/4/7/8/8/24788-a-dog-s-will-0-70-0-105-crop.jpg?v=322c510313" width="70" height="105" alt="A Dog's Will" srcset="https://a.ltrbxd.com/resized/film-poster/2/4/7/8/8/24788-a-dog-s-will-0-140-0-210-crop.jpg?v=322c510313 2x" class="image"><a href="/film/a-dogs-will/" class="frame" data-original-title="A Dog's Will (2000)"><span class="frame-title">A Dog's Will (2000)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-43015 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="43015" data-film-name="Harakiri" data-poster-url="/film/harakiri/image-150/" data-film-release-year="1962" data-new-list-with-film-action="/list/new/with/harakiri/" data-remove-from-watchlist-action="/film/harakiri/remove-from-watchlist/" data-add-to-watchlist-action="/film/harakiri/add-to-watchlist/" data-rate-action="/film/harakiri/rate/" data-mark-as-watched-action="/film/harakiri/mark-as-watched/" data-mark-as-not-watched-action="/film/harakiri/mark-as-not-watched/" data-film-link="/film/harakiri/"><div><img src="https://a.ltrbxd.com/resized/film-poster/4/3/0/1/5/43015-harakiri-0-70-0-105-crop.jpg?v=007080a0fb" width="70" height="105" alt="Harakiri" srcset="https://a.ltrbxd.com/resized/film-poster/4/3/0/1/5/43015-harakiri-0-140-0-210-crop.jpg?v=007080a0fb 2x" class="image"><a href="/film/harakiri/" class="frame" data-original-title="Harakiri (1962)"><span class="frame-title">Harakiri (1962)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51818 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51818" data-film-name="The Godfather" data-poster-url="/film/the-godfather/image-150/" data-film-release-year="1972" data-new-list-with-film-action="/list/new/with/the-godfather/" data-remove-from-watchlist-action="/film/the-godfather/remove-from-watchlist/" data-add-to-watchlist-action="/film/the-godfather/add-to-watchlist/" data-rate-action="/film/the-godfather/rate/" data-mark-as-watched-action="/film/the-godfather/mark-as-watched/" data-mark-as-not-watched-action="/film/the-godfather/mark-as-not-watched/" data-film-link="/film/the-godfather/"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-70-0-105-crop.jpg?v=76192e543f" width="70" height="105" alt="The Godfather" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/8/1/8/51818-the-godfather-0-140-0-210-crop.jpg?v=76192e543f 2x" class="image"><a href="/film/the-godfather/" class="frame" data-original-title="The Godfather (1972)"><span class="frame-title">The Godfather (1972)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51816 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51816" data-film-name="The Godfather: Part II" data-poster-url="/film/the-godfather-part-ii/image-150/" data-film-release-year="1974" data-new-list-with-film-action="/list/new/with/the-godfather-part-ii/" data-remove-from-watchlist-action="/film/the-godfather-part-ii/remove-from-watchlist/" data-add-to-watchlist-action="/film/the-godfather-part-ii/add-to-watchlist/" data-rate-action="/film/the-godfather-part-ii/rate/" data-mark-as-watched-action="/film/the-godfather-part-ii/mark-as-watched/" data-mark-as-not-watched-action="/film/the-godfather-part-ii/mark-as-not-watched/" data-film-link="/film/the-godfather-part-ii/"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-70-0-105-crop.jpg?v=6a49853f25" width="70" height="105" alt="The Godfather: Part II" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/8/1/6/51816-the-godfather-part-ii-0-140-0-210-crop.jpg?v=6a49853f25 2x" class="image"><a href="/film/the-godfather-part-ii/" class="frame" data-original-title="The Godfather: Part II (1974)"><span class="frame-title">The Godfather: Part II (1974)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-29108 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="29108" data-film-name="The Human Condition III: A Soldier's Prayer" data-poster-url="/film/the-human-condition-iii-a-soldiers-prayer/image-150/" data-film-release-year="1961" data-new-list-with-film-action="/list/new/with/the-human-condition-iii-a-soldiers-prayer/" data-remove-from-watchlist-action="/film/the-human-condition-iii-a-soldiers-prayer/remove-from-watchlist/" data-add-to-watchlist-action="/film/the-human-condition-iii-a-soldiers-prayer/add-to-watchlist/" data-rate-action="/film/the-human-condition-iii-a-soldiers-prayer/rate/" data-mark-as-watched-action="/film/the-human-condition-iii-a-soldiers-prayer/mark-as-watched/" data-mark-as-not-watched-action="/film/the-human-condition-iii-a-soldiers-prayer/mark-as-not-watched/" data-film-link="/film/the-human-condition-iii-a-soldiers-prayer/"><div><img src="https://a.ltrbxd.com/resized/film-poster/2/9/1/0/8/29108-the-human-condition-iii-a-soldier-s-prayer-0-70-0-105-crop.jpg?v=8e7743b177" width="70" height="105" alt="The Human Condition III: A Soldier's Prayer" srcset="https://a.ltrbxd.com/resized/film-poster/2/9/1/0/8/29108-the-human-condition-iii-a-soldier-s-prayer-0-140-0-210-crop.jpg?v=8e7743b177 2x" class="image"><a href="/film/the-human-condition-iii-a-soldiers-prayer/" class="frame" data-original-title="The Human Condition III: A Soldier's Prayer (1961)"><span class="frame-title">The Human Condition III: A Soldier's Prayer (1961)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51700 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51700" data-film-name="12 Angry Men" data-poster-url="/film/12-angry-men/image-150/" data-film-release-year="1957" data-new-list-with-film-action="/list/new/with/12-angry-men/" data-remove-from-watchlist-action="/film/12-angry-men/remove-from-watchlist/" data-add-to-watchlist-action="/film/12-angry-men/add-to-watchlist/" data-rate-action="/film/12-angry-men/rate/" data-mark-as-watched-action="/film/12-angry-men/mark-as-watched/" data-mark-as-not-watched-action="/film/12-angry-men/mark-as-not-watched/" data-film-link="/film/12-angry-men/"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/7/0/0/51700-12-angry-men-0-70-0-105-crop.jpg?v=b8aaf291a9" width="70" height="105" alt="12 Angry Men" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/7/0/0/51700-12-angry-men-0-140-0-210-crop.jpg?v=b8aaf291a9 2x" class="image"><a href="/film/12-angry-men/" class="frame" data-original-title="12 Angry Men (1957)"><span class="frame-title">12 Angry Men (1957)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51716 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51716" data-film-name="Seven Samurai" data-poster-url="/film/seven-samurai/image-150/" data-film-release-year="1954" data-new-list-with-film-action="/list/new/with/seven-samurai/" data-remove-from-watchlist-action="/film/seven-samurai/remove-from-watchlist/" data-add-to-watchlist-action="/film/seven-samurai/add-to-watchlist/" data-rate-action="/film/seven-samurai/rate/" data-mark-as-watched-action="/film/seven-samurai/mark-as-watched/" data-mark-as-not-watched-action="/film/seven-samurai/mark-as-not-watched/" data-film-link="/film/seven-samurai/"><div><img src="https://a.ltrbxd.com/resized/sm/upload/ji/5q/0k/rv/v6xrz4fr92KY1oNC3HsEvrsvR1n-0-70-0-105-crop.jpg?v=973d70bb0c" width="70" height="105" alt="Seven Samurai" srcset="https://a.ltrbxd.com/resized/sm/upload/ji/5q/0k/rv/v6xrz4fr92KY1oNC3HsEvrsvR1n-0-140-0-210-crop.jpg?v=973d70bb0c 2x" class="image"><a href="/film/seven-samurai/" class="frame" data-original-title="Seven Samurai (1954)"><span class="frame-title">Seven Samurai (1954)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51778 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51778" data-film-name="The Shawshank Redemption" data-poster-url="/film/the-shawshank-redemption/image-150/" data-film-release-year="1994" data-new-list-with-film-action="/list/new/with/the-shawshank-redemption/" data-remove-from-watchlist-action="/film/the-shawshank-redemption/remove-from-watchlist/" data-add-to-watchlist-action="/film/the-shawshank-redemption/add-to-watchlist/" data-rate-action="/film/the-shawshank-redemption/rate/" data-mark-as-watched-action="/film/the-shawshank-redemption/mark-as-watched/" data-mark-as-not-watched-action="/film/the-shawshank-redemption/mark-as-not-watched/" data-film-link="/film/the-shawshank-redemption/"><div><img src="https://a.ltrbxd.com/resized/sm/upload/7l/hn/46/uz/zGINvGjdlO6TJRu9wESQvWlOKVT-0-70-0-105-crop.jpg?v=8736d1c395" width="70" height="105" alt="The Shawshank Redemption" srcset="https://a.ltrbxd.com/resized/sm/upload/7l/hn/46/uz/zGINvGjdlO6TJRu9wESQvWlOKVT-0-140-0-210-crop.jpg?v=8736d1c395 2x" class="image"><a href="/film/the-shawshank-redemption/" class="frame" data-original-title="The Shawshank Redemption (1994)"><span class="frame-title">The Shawshank Redemption (1994)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51921 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51921" data-film-name="Spirited Away" data-poster-url="/film/spirited-away/image-150/" data-film-release-year="2001" data-new-list-with-film-action="/list/new/with/spirited-away/" data-remove-from-watchlist-action="/film/spirited-away/remove-from-watchlist/" data-add-to-watchlist-action="/film/spirited-away/add-to-watchlist/" data-rate-action="/film/spirited-away/rate/" data-mark-as-watched-action="/film/spirited-away/mark-as-watched/" data-mark-as-not-watched-action="/film/spirited-away/mark-as-not-watched/" data-film-link="/film/spirited-away/"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-70-0-105-crop.jpg?v=a3ad463c55" width="70" height="105" alt="Spirited Away" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-140-0-210-crop.jpg?v=a3ad463c55 2x" class="image"><a href="/film/spirited-away/" class="frame" data-original-title="Spirited Away (2001)"><span class="frame-title">Spirited Away (2001)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-44542 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="44542" data-film-name="High and Low" data-poster-url="/film/high-and-low/image-150/" data-film-release-year="1963" data-new-list-with-film-action="/list/new/with/high-and-low/" data-remove-from-watchlist-action="/film/high-and-low/remove-from-watchlist/" data-add-to-watchlist-action="/film/high-and-low/add-to-watchlist/" data-rate-action="/film/high-and-low/rate/" data-mark-as-watched-action="/film/high-and-low/mark-as-watched/" data-mark-as-not-watched-action="/film/high-and-low/mark-as-not-watched/" data-film-link="/film/high-and-low/"><div><img src="https://a.ltrbxd.com/resized/sm/upload/do/zm/ur/ug/dgnyE40yWdI7gbaHmmB5yCCIVpI-0-70-0-105-crop.jpg?v=b0fd9f50fd" width="70" height="105" alt="High and Low" srcset="https://a.ltrbxd.com/resized/sm/upload/do/zm/ur/ug/dgnyE40yWdI7gbaHmmB5yCCIVpI-0-140-0-210-crop.jpg?v=b0fd9f50fd 2x" class="image"><a href="/film/high-and-low/" class="frame" data-original-title="High and Low (1963)"><span class="frame-title">High and Low (1963)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51458 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51458" data-film-name="Central Station" data-poster-url="/film/central-station/image-150/" data-film-release-year="1998" data-new-list-with-film-action="/list/new/with/central-station/" data-remove-from-watchlist-action="/film/central-station/remove-from-watchlist/" data-add-to-watchlist-action="/film/central-station/add-to-watchlist/" data-rate-action="/film/central-station/rate/" data-mark-as-watched-action="/film/central-station/mark-as-watched/" data-mark-as-not-watched-action="/film/central-station/mark-as-not-watched/" data-film-link="/film/central-station/"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/4/5/8/51458-central-station-0-70-0-105-crop.jpg?v=953014999a" width="70" height="105" alt="Central Station" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/4/5/8/51458-central-station-0-140-0-210-crop.jpg?v=953014999a 2x" class="image"><a href="/film/central-station/" class="frame" data-original-title="Central Station (1998)"><span class="frame-title">Central Station (1998)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51896 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51896" data-film-name="The Dark Knight" data-poster-url="/film/the-dark-knight/image-150/" data-film-release-year="2008" data-new-list-with-film-action="/list/new/with/the-dark-knight/" data-remove-from-watchlist-action="/film/the-dark-knight/remove-from-watchlist/" data-add-to-watchlist-action="/film/the-dark-knight/add-to-watchlist/" data-rate-action="/film/the-dark-knight/rate/" data-mark-as-watched-action="/film/the-dark-knight/mark-as-watched/" data-mark-as-not-watched-action="/film/the-dark-knight/mark-as-not-watched/" data-film-link="/film/the-dark-knight/"><div><img src="https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-70-0-105-crop.jpg?v=2d0ce4be25" width="70" height="105" alt="The Dark Knight" srcset="https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-140-0-210-crop.jpg?v=2d0ce4be25 2x" class="image"><a href="/film/the-dark-knight/" class="frame" data-original-title="The Dark Knight (2008)"><span class="frame-title">The Dark Knight (2008)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-251943 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="251943" data-film-name="Spider-Man: Into the Spider-Verse" data-poster-url="/film/spider-man-into-the-spider-verse/image-150/" data-film-release-year="2018" data-new-list-with-film-action="/list/new/with/spider-man-into-the-spider-verse/" data-remove-from-watchlist-action="/film/spider-man-into-the-spider-verse/remove-from-watchlist/" data-add-to-watchlist-action="/film/spider-man-into-the-spider-verse/add-to-watchlist/" data-rate-action="/film/spider-man-into-the-spider-verse/rate/" data-mark-as-watched-action="/film/spider-man-into-the-spider-verse/mark-as-watched/" data-mark-as-not-watched-action="/film/spider-man-into-the-spider-verse/mark-as-not-watched/" data-film-link="/film/spider-man-into-the-spider-verse/"><div><img src="https://a.ltrbxd.com/resized/film-poster/2/5/1/9/4/3/251943-spider-man-into-the-spider-verse-0-70-0-105-crop.jpg?v=5d25123839" width="70" height="105" alt="Spider-Man: Into the Spider-Verse" srcset="https://a.ltrbxd.com/resized/film-poster/2/5/1/9/4/3/251943-spider-man-into-the-spider-verse-0-140-0-210-crop.jpg?v=5d25123839 2x" class="image"><a href="/film/spider-man-into-the-spider-verse/" class="frame" data-original-title="Spider-Man: Into the Spider-Verse (2018)"><span class="frame-title">Spider-Man: Into the Spider-Verse (2018)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51523 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51523" data-film-name="City of God" data-poster-url="/film/city-of-god/image-150/" data-film-release-year="2002" data-new-list-with-film-action="/list/new/with/city-of-god/" data-remove-from-watchlist-action="/film/city-of-god/remove-from-watchlist/" data-add-to-watchlist-action="/film/city-of-god/add-to-watchlist/" data-rate-action="/film/city-of-god/rate/" data-mark-as-watched-action="/film/city-of-god/mark-as-watched/" data-mark-as-not-watched-action="/film/city-of-god/mark-as-not-watched/" data-film-link="/film/city-of-god/"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/5/2/3/51523-city-of-god-0-70-0-105-crop.jpg?v=7517ea94ce" width="70" height="105" alt="City of God" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/5/2/3/51523-city-of-god-0-140-0-210-crop.jpg?v=7517ea94ce 2x" class="image"><a href="/film/city-of-god/" class="frame" data-original-title="City of God (2002)"><span class="frame-title">City of God (2002)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-35988 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="35988" data-film-name="Yi Yi" data-poster-url="/film/yi-yi/image-150/" data-film-release-year="2000" data-new-list-with-film-action="/list/new/with/yi-yi/" data-remove-from-watchlist-action="/film/yi-yi/remove-from-watchlist/" data-add-to-watchlist-action="/film/yi-yi/add-to-watchlist/" data-rate-action="/film/yi-yi/rate/" data-mark-as-watched-action="/film/yi-yi/mark-as-watched/" data-mark-as-not-watched-action="/film/yi-yi/mark-as-not-watched/" data-film-link="/film/yi-yi/"><div><img src="https://a.ltrbxd.com/resized/sm/upload/7s/h0/6e/0f/hhsYCYVPy1V0eTjkGNGdvpDO2qk-0-70-0-105-crop.jpg?v=f8d5b0fe80" width="70" height="105" alt="Yi Yi" srcset="https://a.ltrbxd.com/resized/sm/upload/7s/h0/6e/0f/hhsYCYVPy1V0eTjkGNGdvpDO2qk-0-140-0-210-crop.jpg?v=f8d5b0fe80 2x" class="image"><a href="/film/yi-yi/" class="frame" data-original-title="Yi Yi (2000)"><span class="frame-title">Yi Yi (2000)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-42089 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="42089" data-film-name="A Brighter Summer Day" data-poster-url="/film/a-brighter-summer-day/image-150/" data-film-release-year="1991" data-new-list-with-film-action="/list/new/with/a-brighter-summer-day/" data-remove-from-watchlist-action="/film/a-brighter-summer-day/remove-from-watchlist/" data-add-to-watchlist-action="/film/a-brighter-summer-day/add-to-watchlist/" data-rate-action="/film/a-brighter-summer-day/rate/" data-mark-as-watched-action="/film/a-brighter-summer-day/mark-as-watched/" data-mark-as-not-watched-action="/film/a-brighter-summer-day/mark-as-not-watched/" data-film-link="/film/a-brighter-summer-day/"><div><img src="https://a.ltrbxd.com/resized/film-poster/4/2/0/8/9/42089-a-brighter-summer-day-0-70-0-105-crop.jpg?v=8812319159" width="70" height="105" alt="A Brighter Summer Day" srcset="https://a.ltrbxd.com/resized/film-poster/4/2/0/8/9/42089-a-brighter-summer-day-0-140-0-210-crop.jpg?v=8812319159 2x" class="image"><a href="/film/a-brighter-summer-day/" class="frame" data-original-title="A Brighter Summer Day (1991)"><span class="frame-title">A Brighter Summer Day (1991)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-51383 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="51383" data-film-name="GoodFellas" data-poster-url="/film/goodfellas/image-150/" data-film-release-year="1990" data-new-list-with-film-action="/list/new/with/goodfellas/" data-remove-from-watchlist-action="/film/goodfellas/remove-from-watchlist/" data-add-to-watchlist-action="/film/goodfellas/add-to-watchlist/" data-rate-action="/film/goodfellas/rate/" data-mark-as-watched-action="/film/goodfellas/mark-as-watched/" data-mark-as-not-watched-action="/film/goodfellas/mark-as-not-watched/" data-film-link="/film/goodfellas/"><div><img src="https://a.ltrbxd.com/resized/film-poster/5/1/3/8/3/51383-goodfellas-0-70-0-105-crop.jpg?v=c6c265f228" width="70" height="105" alt="GoodFellas" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/3/8/3/51383-goodfellas-0-140-0-210-crop.jpg?v=c6c265f228 2x" class="image"><a href="/film/goodfellas/" class="frame" data-original-title="GoodFellas (1990)"><span class="frame-title">GoodFellas (1990)</span><span class="overlay"></span></a></div></li>
+
+
+						<li class="react-component poster film-poster film-poster-474474 linked-film-poster" data-component-class="globals.comps.FilmPosterComponent" data-film-id="474474" data-film-name="Everything Everywhere All at Once" data-poster-url="/film/everything-everywhere-all-at-once/image-150/" data-film-release-year="2022" data-new-list-with-film-action="/list/new/with/everything-everywhere-all-at-once/" data-remove-from-watchlist-action="/film/everything-everywhere-all-at-once/remove-from-watchlist/" data-add-to-watchlist-action="/film/everything-everywhere-all-at-once/add-to-watchlist/" data-rate-action="/film/everything-everywhere-all-at-once/rate/" data-mark-as-watched-action="/film/everything-everywhere-all-at-once/mark-as-watched/" data-mark-as-not-watched-action="/film/everything-everywhere-all-at-once/mark-as-not-watched/" data-film-link="/film/everything-everywhere-all-at-once/"><div><img src="https://a.ltrbxd.com/resized/film-poster/4/7/4/4/7/4/474474-everything-everywhere-all-at-once-0-70-0-105-crop.jpg?v=281f1a041e" width="70" height="105" alt="Everything Everywhere All at Once" srcset="https://a.ltrbxd.com/resized/film-poster/4/7/4/4/7/4/474474-everything-everywhere-all-at-once-0-140-0-210-crop.jpg?v=281f1a041e 2x" class="image"><a href="/film/everything-everywhere-all-at-once/" class="frame" data-original-title="Everything Everywhere All at Once (2022)"><span class="frame-title">Everything Everywhere All at Once (2022)</span><span class="overlay"></span></a></div></li>
+
+
+					</ul>
+					<div class="-centered-content">
+						<a class="micro-button -large -gap-1" href="/dave/list/official-top-250-narrative-feature-films/" target="_blank">See the Letterboxd Top 250</a>
+						<p class="body-text -small">or browse our <a href="/films/popular/" target="_blank">most popular films</a></p>
+					</div>
+
+			</div>
+		</section>
+
+		<div class="backdrop-credit">
+			<p class="body-text -small"><a href="/film/star-wars/" target="_blank">Header image from Star Wars (1977)</a></p>
+		</div>
+
+		</div>
+
+
+	</div>

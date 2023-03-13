@@ -4,3 +4,64 @@ h1 {
   color: rgb(180, 4, 4);
   font-size: 114px;
 }
+
+.shortbackdropped .site-body.-backdrop {
+  min-height: 290px;
+  padding-top: 380px;
+}
+.wide-grid .site-body {
+  overflow: hidden;
+}
+.site-body.-backdrop {
+  background-image: none;
+}
+.site-body {
+  background-image: url(asset_path('home.jpg'));
+  padding: 30px 0;
+}
+
+.no-mobile .wide-grid .site-body .content-wrap {
+  min-width: 950px;
+}
+.wide-grid .site-body .content-wrap {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0 20px;
+  width: 1236px;
+}
+.site-body.-backdrop>.content-wrap {
+  position: relative;
+}
+.content-wrap {
+  margin: 0 auto;
+}
+
+.pro-page, .welcome-page {
+  padding-top: 15px;
+  position: relative;
+}
+.overflow {
+  overflow: visible!important;
+}
+
+// .pro-page .body-text, .welcome-page .body-text {
+//   text-shadow: 0 1px 1px rgb(0 0 0 / 50%);
+// }
+.backdrop-header {
+  // top: -75px;
+  width: 680px;
+  margin: 0 auto;
+}
+
+.body-text {
+  font-size: 1.15384615rem;
+  word-break: break-word;
+}
+article, aside, footer, header, img, nav, section {
+  display: block;
+}
+
+.welcome .welcome-content {
+  margin: 3vh auto 6vh;
+  width: 760px;
+}
