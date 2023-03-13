@@ -11,6 +11,11 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def show
+    @bookmark = Bookmark.new
+    @review = Review.new(list: @list)
+  end
+
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
@@ -21,5 +26,9 @@ class ReviewsController < ApplicationController
 
   def review_params
     params.require(:review).permit(:comment, :rating)
+  end
+
+  def set_review
+    @review = current_user.reviews.find(params[:id])
   end
 end

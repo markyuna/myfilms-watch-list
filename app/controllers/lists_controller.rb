@@ -32,6 +32,7 @@ class ListsController < ApplicationController
   private
 
   def set_list
+    # @list = current_user.lists.find_by(id: params[:id]) || current_user.lists.first
     @list = current_user.lists.find(params[:id])
   end
 
