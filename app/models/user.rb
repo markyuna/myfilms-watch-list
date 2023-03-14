@@ -8,5 +8,4 @@ class User < ApplicationRecord
   has_many :movies, dependent: :destroy
   has_many :lists, dependent: :destroy
   has_many :reviews, dependent: :destroy
-
 end

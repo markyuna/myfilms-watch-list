@@ -1,6 +1,6 @@
 class ListsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:list]
-  before_action :set_list, only: [:show, :destroy]
+  before_action :set_list, only: %i[show destroy]
 
   def index
     @lists = current_user.lists.all
