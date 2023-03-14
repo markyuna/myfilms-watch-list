@@ -1,8 +1,9 @@
 import { Controller } from "@hotwired/stimulus"
-
+import { initSortable } from "./init_sortable_controller"
 // Connects to data-controller="insert-movies"
 export default class extends Controller {
   connect() {
+    initSortable()
     const list = document.querySelector("#results")
 
     const insertMovies = (data) => {
