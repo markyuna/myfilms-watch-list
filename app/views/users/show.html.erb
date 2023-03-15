@@ -1,27 +1,100 @@
-
+<div class=" mb-4 d-flex align-items-center justify-content-center img-fluid">
+  <div class="text-center text-white">
+    <%# <h1 classe="mt-4" style="font-size: 29px">Bonjour, <%= @user.name %></h1>
+  </div>
+</div>
 <div class="container p-4">
+  <div class="d-flex justify-content-start">
+    <div class="profile-avatar">
+      <%= image_tag 'profile.png', class:'avatar-large' %>
+    </div>
+    <div class="d-flex align-items-center">
+      <h1 style="font-size: 29px"><%= @user.name %></h1>
+    </div>
+  </div>
+
+  <br>
   <nav>
-    <div class="nav nav-tabs border-light" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs justify-content-center border border-secondary" id="nav-tab" role="tablist">
       <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-      <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+      <button class="nav-link" id="nav-activite-tab" data-bs-toggle="tab" data-bs-target="#nav-activite" type="button" role="tab" aria-controls="nav-activite" aria-selected="true">Activité</button>
+      <button class="nav-link" id="nav-films-tab" data-bs-toggle="tab" data-bs-target="#nav-films" type="button" role="tab" aria-controls="nav-films" aria-selected="true">Films</button>
+      <button class="nav-link" id="nav-listes-tab" data-bs-toggle="tab" data-bs-target="#nav-listes" type="button" role="tab" aria-controls="nav-listes" aria-selected="true">Listes</button>
       <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
       <button class="nav-link" id="nav-Commentaire-tab" data-bs-toggle="tab" data-bs-target="#nav-Commentaire" type="button" role="tab" aria-controls="nav-Commentaire" aria-selected="false">Commentaires</button>
     </div>
   </nav>
-  <div class="tab-content" id="nav-tabContent">
+  <br>
+  <div class="tab-content " id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-      <h1 classe="mt-4" style="font-size: 29px">Bonjour, <%= @user.name %></h1>
       <p><%= @user.email %></p>
-      <p><%= @user.created_at %></p>
+
+    </div>
+    <div class="tab-pane fade" id="nav-activite" role="tabpanel" aria-labelledby="nav-activite-tab" tabindex="0">
+    ....
+    </div>
+    <div class="tab-pane fade" id="nav-films" role="tabpanel" aria-labelledby="nav-films-tab" tabindex="0">
       <section id="favourites" class="section body-text -hero shown-for-owner" data-owner="markyuna">
         <h2 class="section-heading">Films préférés</h2>
         <hr>
         <p class="body-text">Don’t forget to select your <a href="/settings/">films préférés</a>!</p>
       </section>
+    </div>
+    <div class="tab-pane fade" id="nav-listes" role="tabpanel" aria-labelledby="nav-listes-tab" tabindex="0">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h3 class="mb-0">Mes listes</h3>
+        <%= link_to "Create a movie list", new_list_path, class: "btn btn-flat" %>
+      </div>
+      <div class="row">
+        <% @lists.each do |list| %>
+          <div class="co-12 col-sm-6 col-md-4 mb-3">
+            <%= link_to list_path(list), class:"text-decoration-none" do %>
+              <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path(@image.sample) %>)">
+                <%= list.name %>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+          <form action="#" class="row">
+            <h2 class="text-center mb-5">Contact nous</h2>
+            <div class="col-6 mb-3">
+              <label for="first-name" class="form-label">Votre prenom</label>
+              <input type="text" class="form-control" id="first-name" placeholder="Bob">
+            </div>
+            <div class="col-6 mb-3">
+              <label for="subject" class="form-label">Sujet :</label>
+              <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+            <div class="col-12 mb-3">
+              <label for="email" class="form-label">Your email</label>
+              <input type="email" class="form-control" id="email" placeholder="bob@gmail.com">
+            </div>
+            <div class="col-12 mb-3">
+              <label for="message" class="form-label">Message :</label>
+              <textarea class="form-control" id="message" name="message" required></textarea>
+            </div>
+            <div class="col-12 mb-3">
+              <label for="referrer" class="form-label">How do you know us?</label>
+              <select id="referrer" class="form-select">
+                <option value="">Facebook</option>
+                <option value="">Google Search</option>
+                <option value="">A friend</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <input type="submit" value="Sign up" class="btn btn-primary btn-lg w-100">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-Commentaire" role="tabpanel" aria-labelledby="nav-Commentaire-tab" tabindex="0">
       
     </div>
-    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="nav-Commentaire" role="tabpanel" aria-labelledby="nav-Commentaire-tab" tabindex="0">...</div>
   </div>
 </div>
