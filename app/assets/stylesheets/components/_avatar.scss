@@ -3,7 +3,8 @@
   // border-radius: 50%;
 }
 .avatar-large {
-  width: 56px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
 .avatar-bordered {
@@ -14,4 +15,8 @@
 }
 .avatar-square {
   width: 200px;
+}
+
+#avatar-zoom {
+  z-index: 1;
 }

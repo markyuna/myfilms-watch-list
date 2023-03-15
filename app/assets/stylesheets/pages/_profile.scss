@@ -1,3 +1,13 @@
+
+.cover-profile {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(asset_path('banner-profile.jpg'));
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  // background-repeat: no-repeat;
+  background-position: center;
+}
+
 .body-text.-hero {
   font-size: 1.30769231rem;
   line-height: 1.52941176;
@@ -20,4 +30,17 @@
 
 article, aside, footer, header, img, nav, section {
   display: block;
+}
+
+.no-mobile .profile-summary {
+  align-items: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 25px;
+  min-height: 100px;
+}
+
+.profile-summary {
+  position: relative;
 }
