@@ -5,8 +5,7 @@ default: &default
 
 development:
   <<: *default
-  database: myfilms-watch-list_development
-
+  database: myfilms-watch-list
 test:
   <<: *default
   database: myfilms-watch-list_test
