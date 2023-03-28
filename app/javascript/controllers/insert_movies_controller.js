@@ -12,7 +12,8 @@ export default class extends Controller {
   }
 
   fetchMovies(query) {
-    fetch(`https://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
+    // fetch(`https://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
+    fetch(`https://www.omdbapi.com/?s=${query}&apikey=efc119fa`)
       .then(response => response.json())
       .then(data => this.insertMovies(data))
   }
