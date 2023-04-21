@@ -7,7 +7,24 @@
     <div class="d-flex align-items-center">
       <h1 style="font-size: 29px"><%= @user.name %></h1>
     </div>
-    <div class="col-sm-4" data-controller="weather">
+
+  </div>
+  <br>
+  <nav>
+    <div class="nav nav-tabs justify-content-center border border-secondary" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+      <button class="nav-link" id="nav-activite-tab" data-bs-toggle="tab" data-bs-target="#nav-activite" type="button" role="tab" aria-controls="nav-activite" aria-selected="true">Activité</button>
+      <button class="nav-link" id="nav-films-tab" data-bs-toggle="tab" data-bs-target="#nav-films" type="button" role="tab" aria-controls="nav-films" aria-selected="true">Films</button>
+      <button class="nav-link" id="nav-listes-tab" data-bs-toggle="tab" data-bs-target="#nav-listes" type="button" role="tab" aria-controls="nav-listes" aria-selected="true">Listes</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+      <button class="nav-link" id="nav-Commentaire-tab" data-bs-toggle="tab" data-bs-target="#nav-Commentaire" type="button" role="tab" aria-controls="nav-Commentaire" aria-selected="false">Commentaires</button>
+    </div>
+  </nav>
+  <br>
+  <div class="tab-content " id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <p><%= @user.email %></p>
+      <div class="col-sm-4" data-controller="weather">
       <form class="d-flex my-5" data-action="submit->weather#fetchWeather">
         <input type="text" placeholder="Enter city" class="form-control flex-grow-1" data-weather-target="input">
         <a href="" class="position d-flex align-items-center" data-action="click->weather#fetchWeatherByCoordinates"><i class="bi bi-geo-alt"></i></a>
@@ -28,23 +45,6 @@
       </div>
     </div>
       <script src="main.js"></script>
-  </div>
-  <br>
-  <nav>
-    <div class="nav nav-tabs justify-content-center border border-secondary" id="nav-tab" role="tablist">
-      <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-      <button class="nav-link" id="nav-activite-tab" data-bs-toggle="tab" data-bs-target="#nav-activite" type="button" role="tab" aria-controls="nav-activite" aria-selected="true">Activité</button>
-      <button class="nav-link" id="nav-films-tab" data-bs-toggle="tab" data-bs-target="#nav-films" type="button" role="tab" aria-controls="nav-films" aria-selected="true">Films</button>
-      <button class="nav-link" id="nav-listes-tab" data-bs-toggle="tab" data-bs-target="#nav-listes" type="button" role="tab" aria-controls="nav-listes" aria-selected="true">Listes</button>
-      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-      <button class="nav-link" id="nav-Commentaire-tab" data-bs-toggle="tab" data-bs-target="#nav-Commentaire" type="button" role="tab" aria-controls="nav-Commentaire" aria-selected="false">Commentaires</button>
-    </div>
-  </nav>
-  <br>
-  <div class="tab-content " id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-      <p><%= @user.email %></p>
-
     </div>
     <div class="tab-pane fade" id="nav-activite" role="tabpanel" aria-labelledby="nav-activite-tab" tabindex="0">
     ....
